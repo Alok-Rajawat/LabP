@@ -5,5 +5,5 @@ from django.template import loader
 # Create your views here.
 
 def index(request):
-    template=loader.get_template('home_page/index-transparent.html')
+    template=loader.get_template('home_page/index.html')
     return HttpResponse(template.render(request))

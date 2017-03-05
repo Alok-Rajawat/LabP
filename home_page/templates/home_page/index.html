@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% load staticfiles %}
+  	<meta charset="utf-8">
+  	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  	<title>Kudos - The perfect landing page</title>
+  	<link href="{% static 'home_page/assets/css/bootstrap.min.css' %}" rel="stylesheet" media="screen">
+  	<link href="{% static 'home_page/assets/css/new_styles.css' %}" rel="stylesheet" media="screen">
+    <link href="{% static 'home_page/assets/css/hover-min.css' %}" rel="stylesheet" media="screen">
+    <link href="https://fontastic.s3.amazonaws.com/F5o4g5qMFkCpMtrSwjzw3b/icons.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries  -->
+    <!--[if lt IE 9]>
+    	<script src="{% static 'home_page/assets/js/html5shiv.js' %}"></script>
+    	<script src="{% static 'home_page/assets/js/respond.min.js' %}"></script>
+    <![endif] -->
+  </head>
+  <body>
+    <div id="page">
+      <div class="container">
+        <header id="site-header">
+          <div class="row">
+            <nav id="top-nav" class="navbar navbar-default navbar-fixed-top navbar-scroll-changed" role="navigation">
+              <div class="container">
+                <div class="col-sm-1 col-lg-2 col-xs-12">
+                  <div id="branding">
+                    <a href="#" title="Home is where the heart is" rel="home">
+                      <img id="logo" src="{% static 'home_page/assets/images/kudos-logo-active.png' %}" class="hidden-xs" alt="Home is where the heart is">
+                      <img src="{% static 'home_page/assets/images/kudos-logo-active.png' %}" class="hidden-md hidden-sm hidden-lg" alt="Home is where the heart is">
+                    </a>
+                  </div><!-- /.branding -->
+                  <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                    </button>
+                  </div><!-- /.navbar-header -->
+                </div><!-- /.col-sm-1 col-lg-1 col-xs-12 -->
+                <div class="col-sm-11 col-lg-10 col-xs-12">
+                  <div class="navbar-collapse collapse" id="bs-example-navbar-collapse-1" aria-expanded="true" style="height: 1px;">
+                    <ul id="menu-main-top-navigation" class="nav navbar-nav navbar-right">
+                      <li><a href="#myCarousel">Home</a></li>
+                      <li><a href="#features">Features</a></li>
+                      <li><a href="#about">About</a></li>
+                      <li><a href="#team">Team</a></li>
+                      <li><a class="btn btn-lg btn-buy" href="#">Login</a></li>
+                      <li><a class="btn btn-lg btn-buy" href="#">Sign Up</a></li>
+                    </ul>
+                  </div><!-- /.navbar-collapse -->
+                </div><!-- /.col-sm-8 col-lg-8 col-xs-12 -->
+              </div><!-- /.row -->
+            </nav>
+          </div><!-- /.row -->
+        </header>
+        <!-- Main component for a primary marketing message or call to action  -->
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+          <!-- Indicators  -->
+          <ol class="carousel-indicators dotstyle dotstyle-hop">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1" class=""></li>
+            <li data-target="#myCarousel" data-slide-to="2" class=""></li>
+          </ol>
+          <div class="carousel-inner" role="listbox">
+            <div class="item active">
+              <img class="first-slide" src="{% static 'home_page/assets/images/slide-1.jpg' %}" alt="First slide">
+              <div class="container">
+                <div class="carousel-caption">
+                  <h1>Learn, Design, Repeat</h1>
+                  <p>Awesome, effective one product landing page very easy to operate</p>
+                </div><!-- /.carousel-caption -->
+              </div><!-- /.container -->
+            </div><!-- /.item-active -->
+            <div class="item">
+             <img class="second-slide" src="{% static 'home_page/assets/images/slide-2.jpg' %}" alt="Second slide">
+              <div class="container">
+                <div class="carousel-caption">
+                  <h1>This is your app</h1>
+                   <p>Awesome, effective one product landing page very easy to operate</p>
+                  <p><a class="btn btn-lg btn-green" href="#" role="button">See more</a></p>
+                </div><!-- /.carousel-caption -->
+              </div><!-- /.container -->
+            </div><!-- /.item -->
+            <div class="item">
+              <img class="third-slide" src="{% static 'home_page/assets/images/slide-3.jpg' %}" alt="Third slide">
+              <div class="container">
+                <div class="carousel-caption">
+                  <h1>One more for good measure.</h1>
+                  <p>Awesome, effective one product landing page very easy to operate</p>
+                </div><!-- /.carousel-caption -->
+              </div><!-- /.container -->
+            </div><!-- /.item -->
+          </div><!-- /.carousel-inner -->
+        </div><!-- /.myCarousel -->
+        <section id="features">
+          <div class="title">
+            <h2>Easy & Flexible</h2>
+            <p>Best practice to showcase your webapp. <br />You can bring vision to your life</p>
+          </div><!-- /.title -->
+          <div class="row">
+            <div class="col-sm-4 col-xs-12">
+              <ul class="items item-list-right">
+                <li>
+                  <span class="icon icon-support"></span>
+                  <h4><mark>Awesome Client Support.</mark> <br />Pick up the phone and call.</h4>
+                </li>
+                <li>
+                  <span class="icon icon-security"></span>
+                  <h4><mark>Secure Payment.</mark> Your projects are secured.</h4>
+                </li>
+                <li>
+                  <span class="icon icon-satisfaction-guarantee"></span>
+                  <h4><mark>Satisfaction Guarantee.</mark> Our top priority.</h4>
+                </li>
+              </ul><!-- /.item-list-right -->
+            </div><!-- /.col-sm-4 -->
+            <div class="col-sm-4 col-xs-12 ipad">
+              <img src="{% static 'home_page/assets/images/mobile-phone-feautures.png' %}" alt="" class="ipad-features img-responsive">
+            </div><!-- /.col-sm-4 -->
+            <div class="col-sm-4 col-xs-12">
+              <ul class="items item-list-left">
+                <li>
+                  <span class="icon icon-gears-setting"></span>
+                  <h4><mark>Useful features.</mark> We are focused on usability</h4>
+                </li>
+                <li>
+                  <span class="icon icon-mobile"></span>
+                  <h4><mark>Responsiveness.</mark> Your project looks great on any device</h4>
+                </li>
+                <li>
+                  <span class="icon icon-clipboard-notes"></span>
+                  <h4><mark>Manage internal work.</mark> With little effort </h4>
+                </li>
+              </ul><!-- /.item-list-left -->
+            </div><!-- /.col-sm-4 -->
+        </div><!-- /.row -->
+        </section><!-- /#features -->
+        <section id="about" class="caption">
+          <div class="row">
+            <div class="col-md-6 left">
+              <img src="{% static 'home_page/assets/images/mobile-wood.png' %}" alt=""  class="img-responsive">
+            </div><!-- /.col-md-6 -->
+            <div class="col-md-6 caption-content">
+              <h2>You'll love it</h2>
+              <p>Phasellus vitae commodo nisi. Sed vitae quam quis dui bibendum malesuada. Aliquam nec quam vitae nunc
+                ultricies dignissim ultricies in leo. Donec a gravida mauris.
+              </p>
+              <a href="#" class="btn btn-green btn-lg" role="button">See it in action</a>
+            </div><!-- /.col-md-6 -->
+          </div><!-- /.row -->
+        </section><!-- /.caption -->
+        <section id="team">
+          <div class="title">
+            <h2>Meet the team</h2>
+            <p>You don't build a business. <br />You build people and then people build the business.</p>
+          </div>
+          <div class="row">
+            <div class="member col-md-3">
+              <a href="#"><img src="{% static 'home_page/assets/images/team-member-1.png' %}" alt="" class="headshot hvr-float"></a>
+              <a href="#"><h3>Frantisek Kusovsky</h3></a>
+              <span class="profession">Web developer</span>
+              <p class="social">
+                <a href="#"><span class="icon-social icon-social-facebook"></span></a>
+                <a href="#"><span class="icon-social icon-social-twitter"></span></a>
+                <a href="#"><span class="icon-social icon-social-linkedin"></span></a>
+              </p>
+            </div>
+            <div class="member col-md-3">
+              <a href="#"><img src="{% static 'home_page/assets/images/team-member-2.png' %}" alt="" class="headshot hvr-float"></a>
+              <a href="#"><h3>Meagan Fisher</h3></a>
+              <span class="profession">Web designer</span>
+              <p class="social">
+                <a href="#"><span class="icon-social icon-social-facebook"></span></a>
+                <a href="#"><span class="icon-social icon-social-twitter"></span></a>
+                <a href="#"><span class="icon-social icon-social-linkedin"></span></a>
+              </p>
+            </div>
+            <div class="member col-md-3">
+              <a href="#"><img src="{% static 'home_page/assets/images/team-member-4.png' %}" alt="" class="headshot hvr-float"></a>
+              <a href="#"><h3>Julien Renvoye</h3></a>
+              <span class="profession">Office manager</span>
+              <p class="social">
+                <a href="#"><span class="icon-social icon-social-facebook"></span></a>
+                <a href="#"><span class="icon-social icon-social-twitter"></span></a>
+                <a href="#"><span class="icon-social icon-social-linkedin"></span></a>
+              </p>
+            </div>
+          </div><!-- /.row -->
+        </section><!-- /.team -->
+        <section id="newsletter">
+          <div class="title">
+            <h2>Would you like to see more?</h2>
+            <p>Stay updated with smart + fun + effective <br />wordpress themes</p>
+          </div><!-- /.title -->
+          <form class="nl-form">
+            <input class="subscribe-email no-dirty" placeholder="your@email.com" required="" type="email">
+            <button class="submit-email button">Subscribe to good stuff</button>
+          </form>
+        </section><!-- /.newsletter -->
+        <div id="footer">
+        <div class="title">
+          <div class="row">
+            <a class="navbar-brand" href="#"><img src="{% static 'home_page/assets/images/kudos-logo-active.png' %}" data-active-url="img/logo-active.png" alt=""></a>
+          </div><!-- /.row -->
+          <div class="row">
+            <p class="social">
+              <a href="#"><span class="icon-social icon-instagram"></span></a>
+              <a href="#"><span class="icon-social icon-social-pinterest"></span></a>
+              <a href="#"><span class="icon-social icon-social-facebook"></span></a>
+              <a href="#"><span class="icon-social icon-social-twitter"></span></a>
+            </p>
+          </div><!-- /.row -->
+          <ul class="footer-links">
+            <li class="active"><a href="#">Home</a></li>
+              <li><a href="#">Contact us</a></li>
+              <li><a href="#">Faq</a></li>
+              <li><a href="#">Terms of use</a></li>
+            <li><a href="#">Privacy policy</a></li>
+          </ul>
+          <p class="copyright">
+            © Copyright 2015 Kudos Theme - All Rights Reserved.
+          </p>
+        </div><!-- /.title -->
+      </div><!-- /.footer -->
+      </div><!-- /.container -->
+    </div><!-- /#page -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="{% static 'home_page/assets/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'home_page/assets/js/main.js' %}"></script>
+  </body>
+</html>

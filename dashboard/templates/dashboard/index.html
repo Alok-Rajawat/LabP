@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% load staticfiles %}
+  	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  	<title>Kudos - The perfect landing page</title>
+  	<link href="{% static 'home_page/assets/css/bootstrap.min.css' %}" rel="stylesheet" media="screen">
+  	<link href="{% static 'home_page/assets/css/new_styles.css' %}" rel="stylesheet" media="screen">
+    <link href="{% static 'home_page/assets/css/hover-min.css' %}" rel="stylesheet" media="screen">
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+    <div id="page">
+      <header id="site-header">
+        <div class="row">
+          <nav id="top-nav" class="navbar navbar-default navbar-fixed-top navbar-scroll-changed" role="navigation">
+            <div class="container">
+              <div class="col-sm-1 col-lg-2 col-xs-12">
+                <div id="branding">
+                  <a href="#" title="asdfsdfasf" rel="home">
+                    <img id="logo" src="{% static 'home_page/assets/images/logo.png' %}" class="hidden-xs" alt="aasdsdsd">
+                    <img src="{% static 'home_page/assets/images/logo.png' %}" class="hidden-md hidden-sm hidden-lg" alt="sadsfdfsdf">
+                  </a>
+                </div><!-- /.branding -->
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                </div><!-- /.navbar-header -->
+              </div><!-- /.col-sm-1 col-lg-1 col-xs-12 -->
+              <div class="col-sm-11 col-lg-10 col-xs-12">
+                <div class="navbar-collapse collapse" id="bs-example-navbar-collapse-1" aria-expanded="true" style="height: 1px;">
+                  <ul id="menu-main-top-navigation" class="nav navbar-nav navbar-right">
+                    <li><a href="#myCarousel">Home</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#team">Team</a></li>
+                    <li><a class="btn btn-lg btn-buy" href="#">Sign Out</a></li>
+                  </ul>
+                </div><!-- /.navbar-collapse -->
+              </div><!-- /.col-sm-8 col-lg-8 col-xs-12 -->
+            </div><!-- /.row -->
+          </nav>
+        </div><!-- /.row -->
+      </header>
+      <!-------------------------------------------------------------------------------------------------->
+      <section id="features">
+        <div class="title">
+          <h2>asdfasdfasf</h2>
+          <p>asdfasdfasdf</p>
+        </div><!-- /.title -->
+        
+      </section><!-- /#features -->
+    </div><!-- /#page -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="{% static 'home_page/assets/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'home_page/assets/js/main.js' %}"></script>
+  </body>
+</html>
